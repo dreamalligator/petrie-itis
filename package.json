@@ -1,0 +1,21 @@
+{
+  "name": "petrie-itis",
+  "version": "1.0.0",
+  "description": "a ITIS search wrapper for Petrie",
+  "main": "dist/petrie-itis.min.js",
+  "repository": "git@github.com:nebulousdog/petrie-itis.git",
+  "author": "Tom Spalding <tom@nebulousdog.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^11.11.0",
+    "node-fetch": "^2.1.2",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "fetch-mock": "^6.4.3",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "$(yarn bin)/mocha"
+  }
+}
