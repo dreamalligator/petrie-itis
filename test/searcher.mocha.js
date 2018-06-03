@@ -1,12 +1,10 @@
 'use strict';
 
-const fs = require('fs');
+const expect = require('chai').expect;
 const fetchMock = require('fetch-mock');
-const jsdom = require('jsdom');
 const ITISSearch = require('../lib/searcher');
 
-global.window = (new jsdom.JSDOM()).window;
-const itisXML = fs.readFile('./fixtures/searchByScientificNameDrosera.xml');
+const itisJSON = require('./fixtures/searchByScientificNameDrosera.json');
 
 describe('ITISSearch', function() {
   context('#formatData', function() {
@@ -17,7 +15,7 @@ describe('ITISSearch', function() {
 
   context('#queryITIS', function() {
     before(function() {
-      fetchMock.mock('*', itisXML);
+      fetchMock.mock('*', itisJSON);
     });
 
     after(function() {
@@ -25,8 +23,8 @@ describe('ITISSearch', function() {
     });
 
     it('works', function() {
-      const droseraResult = new ITISSearch('drosera');
-      expect(droseraResult).to.equal(itisXML);
+      const droseraResult = ITISSearch.prototype.queryITIS('drosera');
+      expect(droseraResult).to.equal(itisJSON);
     });
   });
 });
