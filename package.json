@@ -13,9 +13,12 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "fetch-mock": "^6.4.3",
+    "jsdoc": "^3.5.5",
     "mocha": "^5.2.0"
   },
   "scripts": {
+    "docs": "$(yarn bin)/jsdoc lib -d docs -R README.md",
     "test": "$(yarn bin)/mocha"
-  }
+  },
+  "keywords": ["petrie", "itis", "taxonomy", "phylogeny", "data-structures", "api-wrapper", "nature", "graph", "classification"]
 }
