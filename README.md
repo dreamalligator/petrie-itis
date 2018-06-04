@@ -22,6 +22,16 @@ This queries the ITIS database, saves the raw response, and caches the formatted
 }
 ```
 
+## Getting started
+
+* YARN: `yarn add petrie petrie-itis`
+* NPM: `npm install petrie petrie-itis`
+* GIT: `git clone git@github.com:nebulousdog/petrie-itis.git`
+
+## Tests
+
+Run tests with `yarn test`.
+
 ## License
 
 MIT
