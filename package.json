@@ -2,7 +2,7 @@
   "name": "petrie-itis",
   "version": "1.0.0",
   "description": "a ITIS search wrapper for Petrie",
-  "main": "dist/petrie-itis.min.js",
+  "main": "index.js",
   "repository": "git@github.com:nebulousdog/petrie-itis.git",
   "author": "Tom Spalding <tom@nebulousdog.com>",
   "license": "MIT",
