@@ -23,8 +23,10 @@ describe('ITISSearch', function() {
     });
 
     it('works', function() {
-      const droseraResult = ITISSearch.prototype.queryITIS('drosera');
-      expect(droseraResult).to.equal(itisJSON);
+      const droseraPromise = ITISSearch.prototype.queryITIS('drosera');
+      droseraPromise.then(function(json) {
+        expect(json).to.equal(itisJSON);
+      });
     });
   });
 });
