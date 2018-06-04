@@ -1,6 +1,7 @@
 'use strict';
 
 const expect = require('chai').expect;
+const sinon = require('sinon');
 const fetchMock = require('fetch-mock');
 const ITISSearch = require('../lib/searcher');
 
@@ -27,6 +28,21 @@ describe('ITISSearch', function() {
       droseraPromise.then(function(json) {
         expect(json).to.equal(itisJSON);
       });
+    });
+  });
+
+  context('#refresh', function() {
+    before(function() {
+      sinon.spy(ITISSearch.prototype, 'queryITIS');
+    });
+
+    after(function() {
+      ITISSearch.prototype.queryITIS.restore();
+    });
+
+    it('works', function() {
+      ITISSearch.prototype.refresh();
+      expect(ITISSearch.prototype.queryITIS.calledOnce).to.be.true;
     });
   });
 });

@@ -7,7 +7,8 @@
   "author": "Tom Spalding <tom@nebulousdog.com>",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.1.2"
+    "node-fetch": "^2.1.2",
+    "sinon": "^5.0.10"
   },
   "devDependencies": {
     "chai": "^4.1.2",
