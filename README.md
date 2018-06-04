@@ -1,5 +1,7 @@
 # Petrie ITIS
 
+![build](https://travis-ci.org/nebulousdog/petrie-itis.svg?branch=master)
+
 A simple wrapper to query the Integrated Taxonomic Information System ([ITIS](https://www.itis.gov)) database and format the result for [Petrie](https://github.com/nebulousdog/petrie).
 
 ## Usage
