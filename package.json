@@ -1,24 +1,41 @@
 {
   "name": "petrie-itis",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a ITIS search wrapper for Petrie",
   "main": "index.js",
   "repository": "git@github.com:nebulousdog/petrie-itis.git",
   "author": "Tom Spalding <tom@nebulousdog.com>",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.1.2",
-    "sinon": "^5.0.10"
+    "fast-levenshtein": "^2.0.6",
+    "node-fetch": "^2.1.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
     "fetch-mock": "^6.4.3",
     "jsdoc": "^3.5.5",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "sinon": "^5.0.10"
   },
   "scripts": {
+    "coverage": "$(yarn bin)/nyc report --reporter=text-lcov | $(yarn bin)/coveralls",
     "docs": "$(yarn bin)/jsdoc lib -d docs -R README.md",
-    "test": "$(yarn bin)/mocha"
+    "lint": "$(yarn bin)/eslint lib",
+    "test": "$(yarn bin)/nyc mocha"
   },
-  "keywords": ["petrie", "itis", "taxonomy", "phylogeny", "data-structures", "api-wrapper", "nature", "graph", "classification"]
+  "keywords": [
+    "api-wrapper",
+    "classification",
+    "data-structures",
+    "graph",
+    "itis",
+    "nature",
+    "petrie",
+    "phylogeny",
+    "taxonomy"
+  ],
+  "homepage": "https://nebulousdog.github.io/petrie-itis/"
 }

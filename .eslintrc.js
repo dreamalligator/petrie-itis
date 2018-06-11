@@ -11,7 +11,17 @@ module.exports = {
   "rules": {
     // Possible Errors
     "no-console": ["error", { "allow": ["warn", "error", "debug"]}],
+    "valid-jsdoc": "error",
     // Stylistic Issues
-    "semi": "error"
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": true,
+        "FunctionExpression": true,
+      },
+    }],
+    "semi": "error",
   }
 };

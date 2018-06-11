@@ -1,0 +1,243 @@
+{
+  "author": "",
+  "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecordList",
+  "hierarchyList": [
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "",
+      "parentTsn": "",
+      "rankName": "Kingdom",
+      "taxonName": "Plantae",
+      "tsn": "202422"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Plantae",
+      "parentTsn": "202422",
+      "rankName": "Subkingdom",
+      "taxonName": "Viridiplantae",
+      "tsn": "954898"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Viridiplantae",
+      "parentTsn": "954898",
+      "rankName": "Infrakingdom",
+      "taxonName": "Streptophyta",
+      "tsn": "846494"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Streptophyta",
+      "parentTsn": "846494",
+      "rankName": "Superdivision",
+      "taxonName": "Embryophyta",
+      "tsn": "954900"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Embryophyta",
+      "parentTsn": "954900",
+      "rankName": "Division",
+      "taxonName": "Tracheophyta",
+      "tsn": "846496"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Tracheophyta",
+      "parentTsn": "846496",
+      "rankName": "Subdivision",
+      "taxonName": "Spermatophytina",
+      "tsn": "846504"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Spermatophytina",
+      "parentTsn": "846504",
+      "rankName": "Class",
+      "taxonName": "Magnoliopsida",
+      "tsn": "18063"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Magnoliopsida",
+      "parentTsn": "18063",
+      "rankName": "Superorder",
+      "taxonName": "Caryophyllanae",
+      "tsn": "846539"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Caryophyllanae",
+      "parentTsn": "846539",
+      "rankName": "Order",
+      "taxonName": "Caryophyllales",
+      "tsn": "19520"
+    },
+    {
+      "author": null,
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Caryophyllales",
+      "parentTsn": "19520",
+      "rankName": "Family",
+      "taxonName": "Droseraceae",
+      "tsn": "22006"
+    },
+    {
+      "author": "L.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Droseraceae",
+      "parentTsn": "22006",
+      "rankName": "Genus",
+      "taxonName": "Drosera",
+      "tsn": "22009"
+    },
+    {
+      "author": "Raym.-Hamet",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera aliciae",
+      "tsn": "896167"
+    },
+    {
+      "author": "Huds.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera anglica",
+      "tsn": "22018"
+    },
+    {
+      "author": "Pursh",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera brevifolia",
+      "tsn": "22010"
+    },
+    {
+      "author": "L.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera capensis",
+      "tsn": "896168"
+    },
+    {
+      "author": "Poir.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera capillaris",
+      "tsn": "22011"
+    },
+    {
+      "author": "Raf.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera filiformis",
+      "tsn": "22012"
+    },
+    {
+      "author": "Hayne",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera intermedia",
+      "tsn": "22013"
+    },
+    {
+      "author": "Goldie",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera linearis",
+      "tsn": "22014"
+    },
+    {
+      "author": "L.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera rotundifolia",
+      "tsn": "22017"
+    },
+    {
+      "author": "Macfarl.",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera tracyi",
+      "tsn": "512524"
+    },
+    {
+      "author": "E.G. Camus",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera X belezeana",
+      "tsn": "565142"
+    },
+    {
+      "author": "Macfarl. (pro. sp.)",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera X hybrida",
+      "tsn": "502153"
+    },
+    {
+      "author": "Kusak. ex R. Gauthier & Gervais",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera X linglica",
+      "tsn": "896169"
+    },
+    {
+      "author": "Mert. & W. Koch (pro. sp.)",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera X obovata",
+      "tsn": "22016"
+    },
+    {
+      "author": "R. Gauthier & Gervais",
+      "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+      "parentName": "Drosera",
+      "parentTsn": "22009",
+      "rankName": "Species",
+      "taxonName": "Drosera X woodii",
+      "tsn": "896166"
+    }
+  ],
+  "rankName": "",
+  "sciName": "",
+  "tsn": "22009"
+}
