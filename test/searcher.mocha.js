@@ -43,6 +43,12 @@ describe('ITISSearch', function() {
       const promise = ITISSearch.prototype.fetchHierarchyByTSN(22009);
       expect(promise).to.be.a('promise');
     });
+
+    it('throws when given invalid input', function() {
+      expect(function() {
+        ITISSearch.prototype.fetchHierarchyByTSN();
+      }).to.throw(TypeError);
+    });
   });
 
   context('#fetchByName', function() {
@@ -50,11 +56,23 @@ describe('ITISSearch', function() {
       const promise = ITISSearch.prototype.fetchByName('drosera');
       expect(promise).to.be.a('promise');
     });
+
+    it('throws when given invalid input', function() {
+      expect(function() {
+        ITISSearch.prototype.fetchByName();
+      }).to.throw(TypeError);
+    });
   });
 
-  context('#queryITIS', function() {
+  context.skip('#queryITIS', function() {
     it('works', function() {
 
+    });
+
+    it('throws when given invalid input', function() {
+      expect(function() {
+        console.debug(ITISSearch.prototype.queryITIS());
+      }).to.throw(TypeError);
     });
   });
 
@@ -77,6 +95,16 @@ describe('ITISSearch', function() {
     it('works', function() {
       const species = ITISSearch.prototype.selectClosestSpecies('drosera', itisByName.scientificNames);
       expect(species.tsn).to.equal('22009');
+    });
+
+    it('throws when given invalid input', function() {
+      expect(function() {
+        ITISSearch.prototype.selectClosestSpecies();
+      }).to.throw(TypeError);
+
+      expect(function() {
+        ITISSearch.prototype.selectClosestSpecies('term');
+      }).to.throw(TypeError);
     });
   });
 });
