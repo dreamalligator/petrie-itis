@@ -40,13 +40,15 @@ describe('ITISSearch', function() {
 
   context('#fetchHierarchyByTSN', function() {
     it('works', function() {
-
+      const promise = ITISSearch.prototype.fetchHierarchyByTSN(22009);
+      expect(promise).to.be.a('promise');
     });
   });
 
   context('#fetchByName', function() {
     it('works', function() {
-
+      const promise = ITISSearch.prototype.fetchByName('drosera');
+      expect(promise).to.be.a('promise');
     });
   });
 
