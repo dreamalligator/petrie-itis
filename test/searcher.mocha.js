@@ -2,7 +2,7 @@
 
 // test env
 const expect = require('chai').expect;
-// const sinon = require('sinon');
+const sinon = require('sinon');
 // const fetchMock = require('fetch-mock');
 
 // fixtures
@@ -57,8 +57,17 @@ describe('ITISSearch', function() {
   });
 
   context('#refresh', function() {
-    it('works', function() {
+    before(function() {
+      sinon.stub(ITISSearch.prototype, 'queryITIS').calledWith('cat');
+    });
 
+    after(function() {
+      ITISSearch.prototype.queryITIS.restore();
+    });
+
+    it('works', function() {
+      ITISSearch.prototype.refresh();
+      expect(ITISSearch.prototype.queryITIS.calledOnce).to.be.true;
     });
   });
 
