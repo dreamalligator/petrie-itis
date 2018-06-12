@@ -38,7 +38,7 @@ describe('ITISSearch', function() {
     });
   });
 
-  context('#queryITIS', function() {
+  context('#fetchHierarchyByTSN', function() {
     it('works', function() {
 
     });
@@ -50,7 +50,7 @@ describe('ITISSearch', function() {
     });
   });
 
-  context('#fetchHierarchyByTSN', function() {
+  context('#queryITIS', function() {
     it('works', function() {
 
     });
@@ -63,6 +63,9 @@ describe('ITISSearch', function() {
   });
 
   context('#selectClosestSpecies', function() {
-
+    it('works', function() {
+      const species = ITISSearch.prototype.selectClosestSpecies('drosera', itisByName.scientificNames);
+      expect(species.tsn).to.equal('22009');
+    });
   });
 });
