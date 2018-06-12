@@ -1,8 +1,8 @@
 # [Petrie ITIS](https://github.com/nebulousdog/petrie-itis)
 
 ![build](https://travis-ci.org/nebulousdog/petrie-itis.svg?branch=master)
-![vulnerabilities](https://snyk.io/test/github/nebulousdog/petrie-itis/badge.svg?targetFile=package.json)
 ![coverage](https://coveralls.io/repos/github/nebulousdog/petrie-itis/badge.svg?branch=master)
+![vulnerabilities](https://snyk.io/test/github/nebulousdog/petrie-itis/badge.svg?targetFile=package.json)
 
 A simple wrapper to query the Integrated Taxonomic Information System ([ITIS](https://www.itis.gov)) database and format the result for [Petrie](https://github.com/nebulousdog/petrie) using the [ITIS API endpoints](https://www.itis.gov/ws_description.html).
 
