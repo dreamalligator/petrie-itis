@@ -13,7 +13,7 @@ const ITISSearcher = require('petrie-itis');
 const nepenthes = new ITISSearcher('nepenthes');
 ```
 
-This queries the ITIS database, saves the raw response, and caches the formatted data. There is a `refresh` convenience method to query the database again in case there was a network error.
+This queries the ITIS database, and caches the formatted data. There is a `refresh` convenience method to query the database again in case there was a network error.
 
 ## Getting started
 

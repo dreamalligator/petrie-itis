@@ -1,7 +1,7 @@
 language: node_js
 script:
-  yarn lint
-  yarn test
+  - yarn lint
+  - yarn test
 node_js:
   node
 after_success: yarn run coverage

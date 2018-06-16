@@ -13,19 +13,6 @@ const itisByTSN = require('./fixtures/getFullHierarchyFromTSN.json');
 const ITISSearch = require('../lib/searcher');
 
 describe('ITISSearch', function() {
-  before(function() {
-    // fetchMock.mock(/searchByScientificName/, itisByName);
-    // fetchMock.mock(/getFullHierarchyFromTSN/, itisByTSN);
-  });
-
-  beforeEach(function() {
-    // searcher = new ITISSearch('drosera');
-  });
-
-  after(function() {
-    // fetchMock.restore();
-  });
-
   context('#formatData', function() {
     it('works', function() {
       const formattedSpeciesList = ITISSearch.prototype.formatData(itisByTSN.hierarchyList, itisByName.scientificNames);
@@ -66,7 +53,7 @@ describe('ITISSearch', function() {
 
   context.skip('#queryITIS', function() {
     it('works', function() {
-
+      expect((new ITISSearch('drosera')).data.resolve().tsn).to.equal('896166');
     });
 
     it('throws when given invalid input', function() {
