@@ -3,7 +3,7 @@
 // test env
 const expect = require('chai').expect;
 const sinon = require('sinon');
-// const fetchMock = require('fetch-mock');
+const fetchMock = require('fetch-mock');
 
 // fixtures
 const itisByName = require('./fixtures/searchByScientificName.json');
@@ -51,15 +51,21 @@ describe('ITISSearch', function() {
     });
   });
 
-  context.skip('#queryITIS', function() {
-    it('works', function() {
-      expect((new ITISSearch('drosera')).data.resolve().tsn).to.equal('896166');
+  context('#queryITIS', function() {
+    before(function() {
+      fetchMock.mock(/searchByScientificName/, itisByName);
+      fetchMock.mock(/getFullHierarchyFromTSN/, itisByTSN);
     });
 
-    it('throws when given invalid input', function() {
-      expect(function() {
-        console.debug(ITISSearch.prototype.queryITIS());
-      }).to.throw(TypeError);
+    after(function() {
+      fetchMock.restore();
+    });
+
+    it('works', function() {
+      const searcher = new ITISSearch('drosera');
+      searcher.data.then(function(response) {
+        expect(response[0].tsn).to.equal('202422');
+      });
     });
   });
 
