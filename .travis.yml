@@ -1,7 +1,14 @@
 language: node_js
 script:
-  - yarn lint
-  - yarn test
-node_js:
-  node
-after_success: yarn run coverage
+- yarn lint
+- yarn test
+node_js: node
+after_success:
+- yarn run coverage
+- npm publish
+deploy:
+  provider: npm
+  email: antivapor@gmail.com
+  api_key:
+    secure: Y4a/LdcCaxGBZzfNfpFv9iG2fQTLkxM7Oc4G3fuHKV9IraPX5QuM005hrw7S76f1nbZqkq769sjmcGiMR5ieGGajE6x+Dp8fYKAuuEGI1UiFFOAP14sBGWvhMwYjUKsanW2MQ2MowkR0vYiuEG8rLErOqyE0txh6jgrPQRlnnGqCuj1f9/YNqp+SSVoGJIKSdwwk20n2cufTuFnG9tALlqTufv7qfBjpVtG6MNWsnEiCeB44T2IsmzkSwRgV55keGkb9qTu51n1HwZb3lLCqt+Bv4A9P0fBttu+KHUABT+qQmUHcmKauPZG1jZiwtUBrVSA8TxQ+oNbEtjwFG6B3349/gl0kOeMXhcaaQHQWp3PoS0SVMrBe+x2QrxoTX5ypvyXj2J/ei6wVhlZM2IOktxI+3IJq3cCTUeN8V8RyCubN3Z/D8iE6pAfx2DOdFAyFVWHabjd/2acBwHGtd80x5vdr04diMKXso9h1Hp89i1Z6r+XIgiuO2S8Dw0KDyb7UqK9isOSv8QkzCIXgIG1vtloSYryciM/SIF0M/2p+aCny20zEsKHEt/T86dcCo/Ay+dPY95HlsgH752iwbmDSJq5lNM6fXHh3CFhuH4RBtsXxdJ+rUiISJA97+mykHohgwXFQG/gJR2NSw3NgYDBFB1M510eFXthLeTYm5vzJlcU=
+  skip_cleanup: true
