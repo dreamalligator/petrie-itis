@@ -1,4 +1,4 @@
-# [Petrie ITIS](https://github.com/nebulousdog/petrie-itis)
+# [Petrie ITIS 🦕](https://github.com/nebulousdog/petrie-itis)
 
 ![build](https://travis-ci.org/nebulousdog/petrie-itis.svg?branch=master)
 ![coverage](https://coveralls.io/repos/github/nebulousdog/petrie-itis/badge.svg?branch=master)
